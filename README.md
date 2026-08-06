@@ -1,32 +1,152 @@
-# HRIS-Management-System
-A Human Resource Information System (HRIS) developed as a Database Management System project using PHP, MySQL, HTML, CSS, Bootstrap, and JavaScript.
+# Human Resource Information System (HRIS)
+
+A web-based Human Resource Information System (HRIS) developed for managing employees, departments, attendance, leave, and payroll records. This project is developed as part of the Database Management System (DBMS) course.
 
 
-# Table of Contents
+
+## Table of Contents
 
 1. Project Overview
-2. Objectives
-3. Features
-4. Technologies Used
-5. System Modules
-6. Installation Guide
-7. Project Structure
-8. Database Design
-9. CRUD Operations
-10. User Roles
-11. Functional Requirements
-12. Non-Functional Requirements
-13. Expected Output
-14. Future Improvements
-15. Team Members 
+2. Features
+3. Technologies Used
+4. Project Structure
+5. Database Tables
+6. Modules
+7. Installation Guide
+8. CRUD Operations
+9. Future Improvements
+10. Team Members
+11. License
+
+---
+
+#  Project Overview
+
+The Human Resource Information System (HRIS) helps organizations manage employee information digitally. It allows HR staff to maintain employee records, attendance, leave requests, departments, and payroll information efficiently.
+
+---
+
+#  Features
+
+- Employee Management
+- Department Management
+- Attendance Management
+- Leave Management
+- Payroll Management
+- Employee Search
+- Admin Login
+- Responsive Dashboard
+
+---
+
+ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+
+### Backend
+- PHP
+
+### Database
+- MySQL
+
+### Server
+- XAMPP
+
+---
+
+# 📂 Project Structure
+
+HRIS/
+│
+├── assets/
+├── backend/
+├── frontend/
+├── database/
+├── docs/
+├── README.md
+
+---
+
+ Database Tables
+
+- Employees
+- Departments
+- Attendance
+- Leave
+- Payroll
+- Users
+
+---
+
+Modules
+
+- Login
+- Dashboard
+- Employee Management
+- Department Management
+- Attendance
+- Leave
+- Payroll
+- Search
+
+---
+
+CRUD Operations
+
+✔ Create
+
+✔ Read
+
+✔ Update
+
+✔ Delete
+
+---
+
+ Installation
+
+1. Clone the repository
+
+```
+git clone https://github.com/username/HRIS.git
+```
+
+2. Import database
+
+```
+database/hris.sql
+```
+
+3. Start Apache & MySQL
+
+4. Open
+
+
+http://localhost/HRIS
 
 
 
-# Project Overview
+ Future Improvements
 
-The Human Resource Information System (HRIS) replaces manual HR record keeping with a secure and user-friendly web application. It allows HR staff to efficiently manage employee information, attendance, leave, payroll, and department records using a centralized MySQL database.
+- Employee Login
+- PDF Report
+- Email Notification
+- Dashboard Analytics
+- Mobile Responsive Design
 
-The system follows CRUD (Create, Read, Update, Delete) operations and demonstrates practical implementation of database concepts learned in the Database Management System course.
+
+
+Team Members
+
+ Fabiha Montaha Mahi (242-115-057)
+ Anamika Debi (242-115-068)
 
 
 
+#  License
+
+This project is developed for educational purposes.
