@@ -152,4 +152,16 @@ http://localhost/HRIS-Management-System/
 
 # License
 
-This project is developed for educational purposes only.
+This project is developed for educational purposes only. 
+
+---
+
+# ER Diagram
+
+![ER Diagram](docs/Untitled.png)
+
+---
+
+# Flowchart
+
+![Flowchart](docs/Employee Management CRUD-2026-08-06-205....png) 
