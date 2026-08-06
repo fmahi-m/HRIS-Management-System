@@ -2,9 +2,9 @@
 
 A web-based Human Resource Information System (HRIS) developed for managing employees, departments, attendance, leave, and payroll records. This project is developed as part of the Database Management System (DBMS) course.
 
+---
 
-
-## Table of Contents
+# Table of Contents
 
 1. Project Overview
 2. Features
@@ -20,26 +20,26 @@ A web-based Human Resource Information System (HRIS) developed for managing empl
 
 ---
 
-#  Project Overview
+# Project Overview
 
 The Human Resource Information System (HRIS) helps organizations manage employee information digitally. It allows HR staff to maintain employee records, attendance, leave requests, departments, and payroll information efficiently.
 
 ---
 
-#  Features
+# Features
 
+- Admin Login
 - Employee Management
 - Department Management
 - Attendance Management
 - Leave Management
 - Payroll Management
 - Employee Search
-- Admin Login
 - Responsive Dashboard
 
 ---
 
- Technologies Used
+# Technologies Used
 
 ### Frontend
 - HTML5
@@ -58,44 +58,46 @@ The Human Resource Information System (HRIS) helps organizations manage employee
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
-HRIS/
+```
+HRIS-Management-System/
 │
+├── README.md
+├── database_schema.sql
 ├── assets/
 ├── backend/
 ├── frontend/
-├── database/
-├── docs/
-├── README.md
+└── docs/
+```
 
 ---
 
- Database Tables
+# Database Tables
 
-- Employees
-- Departments
-- Attendance
-- Leave
-- Payroll
 - Users
+- Departments
+- Employees
+- Attendance
+- Employee Leave
+- Payroll
 
 ---
 
-Modules
+# Modules
 
 - Login
 - Dashboard
 - Employee Management
 - Department Management
-- Attendance
-- Leave
-- Payroll
+- Attendance Management
+- Leave Management
+- Payroll Management
 - Search
 
 ---
 
-CRUD Operations
+# CRUD Operations
 
 ✔ Create
 
@@ -107,46 +109,47 @@ CRUD Operations
 
 ---
 
- Installation
+# Installation
 
-1. Clone the repository
+### 1. Clone the repository
 
-```
-git clone https://github.com/username/HRIS.git
-```
-
-2. Import database
-
-```
-database/hris.sql
+```bash
+git clone https://github.com/fmahi-m/HRIS-Management-System.git
 ```
 
-3. Start Apache & MySQL
+### 2. Import Database
 
-4. Open
+```
+database_schema.sql
+```
 
+### 3. Start Apache and MySQL
 
-http://localhost/HRIS
+### 4. Open the Project
 
+```
+http://localhost/HRIS-Management-System/
+```
 
+---
 
- Future Improvements
+# Future Improvements
 
 - Employee Login
-- PDF Report
-- Email Notification
+- PDF Report Generation
+- Email Notifications
 - Dashboard Analytics
 - Mobile Responsive Design
 
+---
 
+# Team Members
 
-Team Members
+- **Fabiha Montaha Mahi** (242-115-057)
+- **Anamika Debi** (242-115-068)
 
- Fabiha Montaha Mahi (242-115-057)
- Anamika Debi (242-115-068)
+---
 
+# License
 
-
-#  License
-
-This project is developed for educational purposes.
+This project is developed for educational purposes only.
