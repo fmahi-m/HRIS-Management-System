@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 $sql = "SELECT attendance.Attendance_ID, attendance.Employee_ID, employees.Name, 
@@ -36,16 +37,3 @@ $result = mysqli_query($conn, $sql);
                     <td><?php echo $row['Attendance_ID']; ?></td>
                     <td><?php echo $row['Employee_ID']; ?></td>
                     <td><?php echo $row['Name']; ?></td>
-                    <td><?php echo $row['Attendance_Date']; ?></td>
-                    <td><?php echo $row['Status']; ?></td>
-                    <td>
-                        <a href="edit.php?id=<?php echo $row['Attendance_ID']; ?>" class="btn btn-sm btn-warning">Edit</a>
-                        <a href="delete.php?id=<?php echo $row['Attendance_ID']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
-                    </td>
-                </tr>
-                <?php } ?>
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>

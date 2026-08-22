@@ -4,6 +4,7 @@
 <h2 class="text-center mt-4">
     HRIS Dashboard
 </h2>
+<a href="logout.php" class="btn btn-outline-danger" style="position: absolute; top: 20px; right: 20px;">Logout</a>
 
 
 <div class="container mt-4">
@@ -19,9 +20,9 @@
 
 <p>Employee Information</p>
 
-<button class="btn btn-primary">
+<a href="employees/index.php" class="btn btn-primary">
 View
-</button>
+</a>
 
 </div>
 
@@ -37,9 +38,9 @@ View
 
 <p>Department Details</p>
 
-<button class="btn btn-success">
+<a href="departments/index.php" class="btn btn-success">
 View
-</button>
+</a>
 
 </div>
 
@@ -55,9 +56,9 @@ View
 
 <p>Attendance Record</p>
 
-<button class="btn btn-warning">
+<a href="attendance/index.php" class="btn btn-warning">
 View
-</button>
+</a>
 
 </div>
 
@@ -73,9 +74,9 @@ View
 
 <p>Salary Details</p>
 
-<button class="btn btn-danger">
+<a href="payroll/index.php" class="btn btn-danger">
 View
-</button>
+</a>
 
 </div>
 

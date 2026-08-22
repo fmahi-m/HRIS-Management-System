@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 $sql = "SELECT payroll.Payroll_ID, payroll.Employee_ID, employees.Name,
@@ -26,30 +27,3 @@ $result = mysqli_query($conn, $sql);
                     <th>Employee ID</th>
                     <th>Employee Name</th>
                     <th>Month</th>
-                    <th>Basic Salary</th>
-                    <th>Deductions</th>
-                    <th>Net Salary</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-                <tr>
-                    <td><?php echo $row['Payroll_ID']; ?></td>
-                    <td><?php echo $row['Employee_ID']; ?></td>
-                    <td><?php echo $row['Name']; ?></td>
-                    <td><?php echo $row['Month']; ?></td>
-                    <td><?php echo $row['Basic_Salary']; ?></td>
-                    <td><?php echo $row['Deductions']; ?></td>
-                    <td><?php echo $row['Net_Salary']; ?></td>
-                    <td>
-                        <a href="edit.php?id=<?php echo $row['Payroll_ID']; ?>" class="btn btn-sm btn-warning">Edit</a>
-                        <a href="delete.php?id=<?php echo $row['Payroll_ID']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
-                    </td>
-                </tr>
-                <?php } ?>
-            </tbody>
-        </table>
-    </div>
-</body>
-</html> 

@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 $id = (int) $_GET['id'];
@@ -49,38 +50,4 @@ $employees = mysqli_query($conn, "SELECT Employee_ID, Name FROM employees ORDER 
             <div class="mb-3">
                 <label>Leave Type</label>
                 <select name="leave_type" class="form-control" required>
-                    <?php foreach (['Sick', 'Casual', 'Annual'] as $opt) { ?>
-                        <option value="<?php echo $opt; ?>"
-                            <?php echo ($opt == $leave['Leave_Type']) ? 'selected' : ''; ?>>
-                            <?php echo $opt; ?>
-                        </option>
-                    <?php } ?>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label>Start Date</label>
-                <input type="date" name="start_date" class="form-control"
-                       value="<?php echo $leave['Start_Date']; ?>" required>
-            </div>
-            <div class="mb-3">
-                <label>End Date</label>
-                <input type="date" name="end_date" class="form-control"
-                       value="<?php echo $leave['End_Date']; ?>" required>
-            </div>
-            <div class="mb-3">
-                <label>Status</label>
-                <select name="status" class="form-control" required>
-                    <?php foreach (['Pending', 'Approved', 'Rejected'] as $opt) { ?>
-                        <option value="<?php echo $opt; ?>"
-                            <?php echo ($opt == $leave['Status']) ? 'selected' : ''; ?>>
-                            <?php echo $opt; ?>
-                        </option>
-                    <?php } ?>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Update</button>
-            <a href="index.php" class="btn btn-secondary">Cancel</a>
-        </form>
-    </div>
-</body>
-</html>
+                    <?php

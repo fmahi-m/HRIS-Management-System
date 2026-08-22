@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 $search = $_GET['search'] ?? '';
@@ -94,4 +95,4 @@ if ($search !== '') {
 </div>
 
 </body>
-</html> 
+</html>

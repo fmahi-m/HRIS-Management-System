@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 $sql = "SELECT leave_management.Leave_ID, leave_management.Employee_ID, employees.Name,

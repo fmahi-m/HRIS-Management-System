@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -36,27 +37,4 @@ $employees = mysqli_query($conn, "SELECT Employee_ID, Name FROM employees ORDER 
                 <select name="employee_id" class="form-control" required>
                     <option value="">-- Select Employee --</option>
                     <?php while ($emp = mysqli_fetch_assoc($employees)) { ?>
-                        <option value="<?php echo $emp['Employee_ID']; ?>">
-                            <?php echo $emp['Employee_ID'] . ' - ' . $emp['Name']; ?>
-                        </option>
-                    <?php } ?>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label>Month</label>
-                <input type="text" name="month" class="form-control" placeholder="e.g. August 2026" required>
-            </div>
-            <div class="mb-3">
-                <label>Basic Salary</label>
-                <input type="number" step="0.01" name="basic_salary" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label>Deductions</label>
-                <input type="number" step="0.01" name="deductions" class="form-control" value="0" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Save</button>
-            <a href="index.php" class="btn btn-secondary">Cancel</a>
-        </form>
-    </div>
-</body>
-</html> 
+                        <option value="<?php echo $emp['Employee_ID'];

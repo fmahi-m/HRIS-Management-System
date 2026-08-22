@@ -1,4 +1,5 @@
 <?php
+include '../../config/auth_check.php';
 include '../../config/db.php';
 
 $search = $_GET['search'] ?? '';
@@ -63,21 +64,4 @@ if ($search !== '') {
                                 <td><?php echo $row['Department_ID']; ?></td>
                                 <td><?php echo htmlspecialchars($row['Department_Name']); ?></td>
                                 <td>
-                                    <a href="edit.php?id=<?php echo $row['Department_ID']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="delete.php?id=<?php echo $row['Department_ID']; ?>" class="btn btn-danger btn-sm"
-                                       onclick="return confirm('Delete this department?');">Delete</a>
-                                </td>
-                            </tr>
-                        <?php endwhile; ?>
-                    <?php else: ?>
-                        <tr>
-                            <td colspan="3" class="text-center">No department found.</td>
-                        </tr>
-                    <?php endif; ?>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-</body>
-</html> 
+                                    <a href="edit.php?id=<?php echo $row['Department_ID']; ?>" class="btn
