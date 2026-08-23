@@ -49,6 +49,7 @@ if ($search !== '') {
 
     <div class="card shadow-sm">
         <div class="card-body">
+            <div class="table-responsive">
             <table class="table table-bordered table-hover mb-0">
                 <thead class="table-dark">
                     <tr>
@@ -64,4 +65,5 @@ if ($search !== '') {
                                 <td><?php echo $row['Department_ID']; ?></td>
                                 <td><?php echo htmlspecialchars($row['Department_Name']); ?></td>
                                 <td>
-                                    <a href="edit.php?id=<?php echo $row['Department_ID']; ?>" class="btn
+                                    <a href="edit.php?id=<?php echo $row['Department_ID']; ?>" class="btn btn-warning btn-sm">Edit</a>
+                                    <a href="delete.php?id=<?php echo $row['Department_ID']; ?>" class="btn btn-danger btn-sm"

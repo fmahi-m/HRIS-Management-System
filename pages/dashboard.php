@@ -8,17 +8,17 @@ $todayPresent = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS total
 $monthlyPayroll = mysqli_fetch_assoc(mysqli_query($conn, "SELECT IFNULL(SUM(Net_Salary), 0) AS total FROM payroll"))['total'];
 ?>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-<h2 class="text-center mt-4">
-    HRIS Dashboard
-</h2>
-<a href="reports/index.php" class="btn btn-outline-primary" style="position: absolute; top: 20px; right: 120px;">Reports</a>
-<a href="logout.php" class="btn btn-outline-danger" style="position: absolute; top: 20px; right: 20px;">Logout</a>
-
-
 <div class="container mt-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+        <h2 class="mb-2 mb-md-0">HRIS Dashboard</h2>
+        <div>
+            <a href="reports/index.php" class="btn btn-outline-primary">Reports</a>
+            <a href="logout.php" class="btn btn-outline-danger">Logout</a>
+        </div>
+    </div>
 
 <div class="row">
 
