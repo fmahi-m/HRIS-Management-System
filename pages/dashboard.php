@@ -14,6 +14,7 @@ $monthlyPayroll = mysqli_fetch_assoc(mysqli_query($conn, "SELECT IFNULL(SUM(Net_
 <h2 class="text-center mt-4">
     HRIS Dashboard
 </h2>
+<a href="reports/index.php" class="btn btn-outline-primary" style="position: absolute; top: 20px; right: 120px;">Reports</a>
 <a href="logout.php" class="btn btn-outline-danger" style="position: absolute; top: 20px; right: 20px;">Logout</a>
 
 
