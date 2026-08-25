@@ -5,8 +5,16 @@ include '../../config/db.php';
 if (isset($_GET['id'])) {
     $departmentId = (int) $_GET['id'];
 
+    // Remove department reference from employees
     $stmt = $conn->prepare(
-        "DELETE FROM departments WHERE Department_ID = ?"
+        "UPDATE Employees SET Department_ID = NULL WHERE Department_ID = ?"
+    );
+    $stmt->bind_param("i", $departmentId);
+    $stmt->execute();
+
+    // Now delete the department
+    $stmt = $conn->prepare(
+        "DELETE FROM Departments WHERE Department_ID = ?"
     );
     $stmt->bind_param("i", $departmentId);
     $stmt->execute();
