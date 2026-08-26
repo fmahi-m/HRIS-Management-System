@@ -128,7 +128,7 @@ database_schema.sql
 ### 4. Open the Project
 
 ```
-http://localhost/HRIS-Management-System/
+   http://localhost/hris/
 ```
 
 ---
